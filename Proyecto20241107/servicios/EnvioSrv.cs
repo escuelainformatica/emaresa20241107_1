@@ -9,6 +9,12 @@ namespace Proyecto20241107.servicios
 {
     public class EnvioSrv
     {
+        public static void Mostrar(Envio env)
+        {
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine($"{env.Direccion} : {env.Alto}x{env.Ancho}x{env.Largo} {env.Peso} kg.");
+            Console.WriteLine("----------------------------------------");
+        }
         public static int Volumen(Envio env)
         {
             var resultado = 0;

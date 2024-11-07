@@ -31,5 +31,11 @@ namespace TestProject1
             var envio2 = new Envio(-2, 2, 2, 5, "sunset blv");
             ClassicAssert.AreEqual(false, EnvioSrv.Correcto(envio2));
         }
+        [Test]
+        public void TestMostrar()
+        {
+            var envio1 = new Envio(2, 2, 2, 5, "sunset blv");
+            EnvioSrv.Mostrar(envio1);
+        }
     }
 }
